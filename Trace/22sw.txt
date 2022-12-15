@@ -1,0 +1,15 @@
+#my-sw    
+    00:        00100093        addi x1 x0 1
+    04:        00800113        addi x2 x0 8
+    08:        00202223        sw x2 4 x0
+    0c:        001101b3        add x3 x2 x1
+    10:        00302423        sw x3 8 x0
+    14:        002101b3        add x3 x2 x2
+    18:        00402203        lw x4 4 x0
+    1c:        00802283        lw x5 8 x0
+    20:        004282b3        add x5 x5 x4
+    24:        00512223        sw x5 4 x2
+    28:        00802503        lw x10 8 x0
+    2c:        00412583        lw x11 4 x2
+#end
+# At the end we should get:  (a0,a1) = (9,17)

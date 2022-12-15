@@ -1,0 +1,38 @@
+g++  -o cpusim CPU.cpp cpusim.cpp && ./cpusim ../Trace/22instMem-sw.txt
+got stuff rd=1,rs1=0,imm=1
+ADDI instr
+alu doing add;got res=1;upd_PC imm=1 alu_neg=0 opcode=6;&res= "0"final PC=4;in wb alu_res=1 mem output0 rd=1mem2reg=0;(0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+got stuff rd=2,rs1=0,imm=8
+ADDI instr
+alu doing add;got res=8;upd_PC imm=8 alu_neg=0 opcode=6;&res= "0"final PC=8;in wb alu_res=8 mem output0 rd=2mem2reg=0;(0,1,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+got stuff rs2=2,rs1=0,imm=4
+operand1 is 0
+operand2 is 4
+alu doing add;got res=4;upd_PC imm=4 alu_neg=0 opcode=9;&res= "0"final PC=12;updated memory(0|0|0|0|8|0|0|0|0|0|0|0|0|0|0|0|0|0|0|0|);(0,1,8,0,0,0,0,0,0,0,0,0,0,0,0,0,0)
+got stuff rd=3,rs1=2,rs2=1
+ADD instr
+alu doing add;got res=9;upd_PC imm=4 alu_neg=0 opcode=1;&res= "0"final PC=16;in wb alu_res=9 mem output0 rd=3mem2reg=0;(0,1,8,9,0,0,0,0,0,0,0,0,0,0,0,0,0)
+got stuff rs2=3,rs1=0,imm=8
+operand1 is 0
+operand2 is 8
+alu doing add;got res=8;upd_PC imm=8 alu_neg=0 opcode=9;&res= "0"final PC=20;updated memory(0|0|0|0|8|0|0|0|9|0|0|0|0|0|0|0|0|0|0|0|);(0,1,8,9,0,0,0,0,0,0,0,0,0,0,0,0,0)
+got stuff rd=3,rs1=2,rs2=2
+ADD instr
+alu doing add;got res=16;upd_PC imm=8 alu_neg=0 opcode=1;&res= "0"final PC=24;in wb alu_res=16 mem output0 rd=3mem2reg=0;(0,1,8,16,0,0,0,0,0,0,0,0,0,0,0,0,0)
+got stuff rd=4,rs1=0,imm=4
+alu doing add;got res=4;upd_PC imm=4 alu_neg=0 opcode=7;&res= "0"final PC=28;updated memory(0|0|0|0|8|0|0|0|9|0|0|0|0|0|0|0|0|0|0|0|);in wb alu_res=4 mem output8 rd=4mem2reg=1;(0,1,8,16,8,0,0,0,0,0,0,0,0,0,0,0,0)
+got stuff rd=5,rs1=0,imm=8
+alu doing add;got res=8;upd_PC imm=8 alu_neg=0 opcode=7;&res= "0"final PC=32;updated memory(0|0|0|0|8|0|0|0|9|0|0|0|0|0|0|0|0|0|0|0|);in wb alu_res=8 mem output9 rd=5mem2reg=1;(0,1,8,16,8,9,0,0,0,0,0,0,0,0,0,0,0)
+got stuff rd=5,rs1=5,rs2=4
+ADD instr
+alu doing add;got res=17;upd_PC imm=8 alu_neg=0 opcode=1;&res= "0"final PC=36;in wb alu_res=17 mem output9 rd=5mem2reg=0;(0,1,8,16,8,17,0,0,0,0,0,0,0,0,0,0,0)
+got stuff rs2=5,rs1=2,imm=4
+operand1 is 8
+operand2 is 4
+alu doing add;got res=12;upd_PC imm=4 alu_neg=0 opcode=9;&res= "0"final PC=40;updated memory(0|0|0|0|8|0|0|0|9|0|0|0|17|0|0|0|0|0|0|0|);(0,1,8,16,8,17,0,0,0,0,0,0,0,0,0,0,0)
+got stuff rd=10,rs1=0,imm=8
+alu doing add;got res=8;upd_PC imm=8 alu_neg=0 opcode=7;&res= "0"final PC=44;updated memory(0|0|0|0|8|0|0|0|9|0|0|0|17|0|0|0|0|0|0|0|);in wb alu_res=8 mem output9 rd=10mem2reg=1;(0,1,8,16,8,17,0,0,0,0,9,0,0,0,0,0,0)
+got stuff rd=11,rs1=2,imm=4
+alu doing add;got res=12;upd_PC imm=4 alu_neg=0 opcode=7;&res= "0"final PC=48;updated memory(0|0|0|0|8|0|0|0|9|0|0|0|17|0|0|0|0|0|0|0|);in wb alu_res=12 mem output17 rd=11mem2reg=1;(0,1,8,16,8,17,0,0,0,0,9,17,0,0,0,0,0)
+EXIT
+(9,17)
